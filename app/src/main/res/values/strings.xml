@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ThePerfectPartner</string>
+    <string name="intro1">Log In</string>
+    <string name="intro2">Register</string>
+    <string name="name_and_password">Name and Password</string>
+    <string name="login_button">Log In</string>
+    <string name="login_google_button">Log In with Google</string>
+    <string name="register_button">Register</string>
+    <string name="register_google_button">Register with Google</string>
+    <string name="add_birthday">Whens your birthday?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

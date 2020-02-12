@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFrag">
+
+    <fragment
+        android:id="@+id/introFrag"
+        android:name="com.example.theperfectpartner.IntroFrag"
+        android:label="intro_frag"
+        tools:layout="@layout/intro_frag" />
+    <fragment
+        android:id="@+id/signIn"
+        android:name="com.example.theperfectpartner.LogIn"
+        android:label="sign_in"
+        tools:layout="@layout/log_in" />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.theperfectpartner.Register"
+        android:label="register"
+        tools:layout="@layout/register" />
+    <fragment
+        android:id="@+id/tellUsMore"
+        android:name="com.example.theperfectpartner.AddBirthday"
+        android:label="tell_us_more"
+        tools:layout="@layout/add_birthday" />
+</navigation>
