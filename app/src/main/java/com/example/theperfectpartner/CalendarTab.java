@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class Home extends Fragment {
+public class CalendarTab extends Fragment {
 
 
 
@@ -18,7 +18,7 @@ public class Home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.home, container, false);
+        return inflater.inflate(R.layout.calendar_tab, container, false);
     }
 
 }
