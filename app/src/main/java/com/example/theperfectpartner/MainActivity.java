@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 
-//import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,12 +21,10 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-//        BottomNavigationView bottomNav  = findViewById(R.id.bottom_navigation);
-//        bottomNav.OnNavigationItemReselectedListener(navListener);
-//        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-//                new HomeTab()).commit();
 
-        String Hello ="hello ";
+
+
+
     }
 
 
