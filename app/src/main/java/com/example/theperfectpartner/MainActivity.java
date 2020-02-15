@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 //        bottomNav.OnNavigationItemReselectedListener(navListener);
 //        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
 //                new HomeTab()).commit();
+
+        String Hello ="hello ";
     }
 
 
