@@ -16,8 +16,6 @@ import android.view.ViewGroup;
 
 public class HomeTab extends Fragment{
 
-    NavController navController = null;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

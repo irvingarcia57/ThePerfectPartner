@@ -21,11 +21,7 @@
         android:id="@+id/signIn"
         android:name="com.example.theperfectpartner.LogIn"
         android:label="sign_in"
-        tools:layout="@layout/log_in" >
-        <action
-            android:id="@+id/action_signIn_to_homeTab"
-            app:destination="@id/homeTab" />
-    </fragment>
+        tools:layout="@layout/log_in" />
     <fragment
         android:id="@+id/register"
         android:name="com.example.theperfectpartner.Register"
@@ -49,36 +45,4 @@
         android:name="com.example.theperfectpartner.PersonalDetails"
         android:label="personal_details"
         tools:layout="@layout/personal_details" />
-    <fragment
-        android:id="@+id/homeTab"
-        android:name="com.example.theperfectpartner.HomeTab"
-        android:label="home_tab"
-        tools:layout="@layout/home_tab" >
-        <action
-            android:id="@+id/action_homeTab_to_partnerTab"
-            app:destination="@id/partnerTab" />
-    </fragment>
-    <fragment
-        android:id="@+id/partnerTab"
-        android:name="com.example.theperfectpartner.PartnerTab"
-        android:label="partner_tab"
-        tools:layout="@layout/partner_tab" >
-        <action
-            android:id="@+id/action_partnerTab_to_messagesTab"
-            app:destination="@id/messagesTab" />
-    </fragment>
-    <fragment
-        android:id="@+id/messagesTab"
-        android:name="com.example.theperfectpartner.MessagesTab"
-        android:label="messages_tab"
-        tools:layout="@layout/messages_tab" >
-        <action
-            android:id="@+id/action_messagesTab_to_calendarTab"
-            app:destination="@id/calendarTab" />
-    </fragment>
-    <fragment
-        android:id="@+id/calendarTab"
-        android:name="com.example.theperfectpartner.CalendarTab"
-        android:label="calendar_tab"
-        tools:layout="@layout/calendar_tab" />
 </navigation>

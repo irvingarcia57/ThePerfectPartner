@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/homeTab">
+
+    <fragment
+        android:id="@+id/homeTab"
+        android:name="com.example.theperfectpartner.HomeTab"
+        android:label="home_tab"
+        tools:layout="@layout/home_tab" >
+        <action
+            android:id="@+id/action_homeTab_to_partnerTab2"
+            app:destination="@id/partnerTab" />
+    </fragment>
+    <fragment
+        android:id="@+id/partnerTab"
+        android:name="com.example.theperfectpartner.PartnerTab"
+        android:label="partner_tab"
+        tools:layout="@layout/partner_tab" >
+        <action
+            android:id="@+id/action_partnerTab_to_messagesTab2"
+            app:destination="@id/messagesTab" />
+    </fragment>
+    <fragment
+        android:id="@+id/messagesTab"
+        android:name="com.example.theperfectpartner.MessagesTab"
+        android:label="messages_tab"
+        tools:layout="@layout/messages_tab" >
+        <action
+            android:id="@+id/action_messagesTab_to_calendarTab2"
+            app:destination="@id/calendarTab" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarTab"
+        android:name="com.example.theperfectpartner.CalendarTab"
+        android:label="calendar_tab"
+        tools:layout="@layout/calendar_tab" />
+</navigation>
