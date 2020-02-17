@@ -9,7 +9,14 @@
         android:id="@+id/introFrag"
         android:name="com.example.theperfectpartner.IntroFrag"
         android:label="intro_frag"
-        tools:layout="@layout/intro_frag" />
+        tools:layout="@layout/intro_frag" >
+        <action
+            android:id="@+id/action_introFrag_to_signIn"
+            app:destination="@id/signIn" />
+        <action
+            android:id="@+id/action_introFrag_to_register"
+            app:destination="@id/register" />
+    </fragment>
     <fragment
         android:id="@+id/signIn"
         android:name="com.example.theperfectpartner.LogIn"
@@ -19,7 +26,11 @@
         android:id="@+id/register"
         android:name="com.example.theperfectpartner.Register"
         android:label="register"
-        tools:layout="@layout/register" />
+        tools:layout="@layout/register" >
+        <action
+            android:id="@+id/action_register_to_tellUsMore"
+            app:destination="@id/tellUsMore" />
+    </fragment>
     <fragment
         android:id="@+id/tellUsMore"
         android:name="com.example.theperfectpartner.AddBirthday"
