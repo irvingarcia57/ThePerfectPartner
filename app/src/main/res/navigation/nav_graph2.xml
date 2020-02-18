@@ -4,34 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph2"
     app:startDestination="@id/homeTab">
-
     <fragment
         android:id="@+id/homeTab"
         android:name="com.example.theperfectpartner.HomeTab"
         android:label="home_tab"
-        tools:layout="@layout/home_tab" >
-        <action
-            android:id="@+id/action_homeTab_to_partnerTab2"
-            app:destination="@id/partnerTab" />
-    </fragment>
+        tools:layout="@layout/home_tab" />
     <fragment
         android:id="@+id/partnerTab"
         android:name="com.example.theperfectpartner.PartnerTab"
         android:label="partner_tab"
-        tools:layout="@layout/partner_tab" >
-        <action
-            android:id="@+id/action_partnerTab_to_messagesTab2"
-            app:destination="@id/messagesTab" />
-    </fragment>
+        tools:layout="@layout/partner_tab" />
     <fragment
         android:id="@+id/messagesTab"
         android:name="com.example.theperfectpartner.MessagesTab"
         android:label="messages_tab"
-        tools:layout="@layout/messages_tab" >
-        <action
-            android:id="@+id/action_messagesTab_to_calendarTab2"
-            app:destination="@id/calendarTab" />
-    </fragment>
+        tools:layout="@layout/messages_tab" />
     <fragment
         android:id="@+id/calendarTab"
         android:name="com.example.theperfectpartner.CalendarTab"
