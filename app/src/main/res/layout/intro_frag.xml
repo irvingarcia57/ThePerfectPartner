@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/sign_in"
+        android:id="@+id/register_button"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="388dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/register"
+        android:id="@+id/log_in_button"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -34,5 +34,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_in" />
+        app:layout_constraintTop_toBottomOf="@+id/register_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
