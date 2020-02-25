@@ -10,12 +10,13 @@
     <string name="add_birthday">Whens your birthday?</string>
     <string name="next">Next</string>
     <string name="tell_us_about_you">Tell Us More About You</string>
-
     <string name="home_icon">Home</string>
     <string name="people_icon">Partner</string>
     <string name="message_icon">Messages</string>
     <string name="calendar_icon">Calendar</string>
+    <string name="home_reminders">Reminders</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="partner">Partner</string>
+    <string name="place_holder1">I dont know yet</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

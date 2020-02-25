@@ -14,6 +14,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -22,14 +23,15 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_main2);
 
         BottomNavigationView navigationView = findViewById(R.id.bottom_navigation);
         NavController navController = Navigation.findNavController(this,R.id.fragment_container);
 
         NavigationUI.setupWithNavController(navigationView , navController);
+
+
 
 
 

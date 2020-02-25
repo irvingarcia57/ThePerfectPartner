@@ -29,11 +29,11 @@
         tools:layout="@layout/register" >
         <action
             android:id="@+id/action_register_to_tellUsMore"
-            app:destination="@id/tellUsMore" />
+            app:destination="@id/addBirthday" />
     </fragment>
     <fragment
-        android:id="@+id/tellUsMore"
+        android:id="@+id/addBirthday"
         android:name="com.example.theperfectpartner.AddBirthday"
-        android:label="tell_us_more"
+        android:label="addBirthday"
         tools:layout="@layout/add_birthday" />
 </navigation>

@@ -6,13 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".PartnerTab">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="57dp"
-        android:layout_height="19dp"
-        android:text="Partner"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/partner_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/partner"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/partner"
+                android:layout_width="370dp"
+                android:layout_height="225dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorAccent"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/partner_view" />
+
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
