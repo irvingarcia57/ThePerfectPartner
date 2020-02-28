@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/place_holder1"
-        android:title="@string/place_holder1"/>
+        android:id="@+id/drawer1"
+        android:title="@string/drawer1"/>
+    <item
+        android:id="@+id/drawer2"
+        android:title="@string/drawer2"/>
+    <item
+        android:id="@+id/drawer3"
+        android:title="@string/drawer3"/>
 
 </menu>

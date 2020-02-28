@@ -60,6 +60,26 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recommendations_view" />
+            <TextView
+                android:id="@+id/recommendations_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/recommendations"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reminders" />
+
+            <TextView
+                android:id="@+id/recommendations2"
+                android:layout_width="370dp"
+                android:layout_height="225dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorAccent"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recommendations_view" />
 
 
         </LinearLayout>

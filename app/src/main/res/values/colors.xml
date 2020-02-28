@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="main_theme_color">#385383</color>
-    <color name="m">#385383</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#385383</color>
     <color name="colorAccent">#73ACA9</color>
 </resources>

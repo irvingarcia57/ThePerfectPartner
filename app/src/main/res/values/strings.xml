@@ -17,6 +17,14 @@
     <string name="home_reminders">Reminders</string>
     <string name="recommendations">Recommendations</string>
     <string name="partner">Partner</string>
-    <string name="place_holder1">I dont know yet</string>
+    <string name="drawer1">You</string>
+    <string name="drawer2">Partner</string>
+    <string name="drawer3">Other Settings</string>
+    <string name="profile_nav">Profile</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
