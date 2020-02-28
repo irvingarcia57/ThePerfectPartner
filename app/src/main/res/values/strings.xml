@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ThePerfectPartner</string>
+    <string name="app_name"></string>
     <string name="intro1">Log In</string>
     <string name="intro2">Register</string>
     <string name="name_and_password">Name and Password</string>
