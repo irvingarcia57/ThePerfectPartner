@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="415dp"
-        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
         android:background="@color/main_theme_color"
         android:gravity="center"
         android:text="@string/profile_nav"

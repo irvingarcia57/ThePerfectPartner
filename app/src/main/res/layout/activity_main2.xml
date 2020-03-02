@@ -21,10 +21,11 @@
         android:id="@+id/fragment_container"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/bottom_navigation"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph2" />
+
 
     <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
