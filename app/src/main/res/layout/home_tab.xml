@@ -6,84 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".HomeTab">
 
-    <ScrollView
+
+    <TextView
+        android:id="@+id/reminder_view"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/home_reminders"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <TextView
+        android:id="@+id/reminders"
+        android:layout_width="370dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reminder_view" />
 
-            <TextView
-                android:id="@+id/reminder_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="@string/home_reminders"
-                android:textSize="20sp" />
+    <TextView
+        android:id="@+id/recommendations_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/recommendations"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reminders" />
 
-            <TextView
-                android:id="@+id/reminders"
-                android:layout_width="match_parent"
-                android:layout_height="225dp"
-                android:layout_marginTop="20dp"
-                android:background="@color/colorAccent"
-                android:text=""
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/reminder_view" />
-
-            <TextView
-                android:id="@+id/recommendations_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="@string/recommendations"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/reminders" />
-
-            <TextView
-                android:id="@+id/recommendations"
-                android:layout_width="370dp"
-                android:layout_height="225dp"
-                android:layout_marginTop="20dp"
-                android:background="@color/colorAccent"
-                android:text=""
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recommendations_view" />
-            <TextView
-                android:id="@+id/recommendations_view2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="@string/recommendations"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/reminders" />
-
-            <TextView
-                android:id="@+id/recommendations2"
-                android:layout_width="370dp"
-                android:layout_height="225dp"
-                android:layout_marginTop="20dp"
-                android:background="@color/colorAccent"
-                android:text=""
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recommendations_view" />
-
-
-        </LinearLayout>
-    </ScrollView>
-
+    <TextView
+        android:id="@+id/reminders2"
+        android:layout_width="370dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommendations_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

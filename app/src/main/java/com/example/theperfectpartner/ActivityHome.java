@@ -20,7 +20,7 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity2 extends AppCompatActivity implements  NavigationView.OnNavigationItemSelectedListener{
+public class ActivityHome extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
@@ -38,42 +38,36 @@ public class MainActivity2 extends AppCompatActivity implements  NavigationView.
         NavigationUI.setupWithNavController(navigationView , navController);
 
         //Drawer navigation logic
-        drawerLayout = findViewById(R.id.drawer);
-        toolbar = findViewById(R.id.toolbar);
-        drawer_navigationView = findViewById(R.id.navigation_view);
-        setSupportActionBar(toolbar);
-
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.open,R.string.close);
-        drawerLayout.addDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
-        actionBarDrawerToggle.syncState();
-
-
-
-
-
-
+//        drawerLayout = findViewById(R.id.drawer);
+//        toolbar = findViewById(R.id.toolbar);
+//        drawer_navigationView = findViewById(R.id.navigation_view);
+//        setSupportActionBar(toolbar);
+//
+//        actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,R.string.open,R.string.close);
+//        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+//        actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
+//        actionBarDrawerToggle.syncState();
 
     }
 
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        switch (menuItem.getItemId()) {
-            case R.id.drawer1:
-                Toast.makeText(this, "drawer 1", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.drawer2:
-                Toast.makeText(this, "drawer 2", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.drawer3:
-                Toast.makeText(this, "drawer 3", Toast.LENGTH_SHORT).show();
-                break;
-
-        }
-        menuItem.setChecked(true);
-        drawerLayout.closeDrawer(GravityCompat.START);
-
-        return true;
-    }
+//    @Override
+//    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+//        switch (menuItem.getItemId()) {
+//            case R.id.drawer1:
+//                Toast.makeText(this, "drawer 1", Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.drawer2:
+//                Toast.makeText(this, "drawer 2", Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.drawer3:
+//                Toast.makeText(this, "drawer 3", Toast.LENGTH_SHORT).show();
+//                break;
+//
+//        }
+//        menuItem.setChecked(true);
+//        drawerLayout.closeDrawer(GravityCompat.START);
+//
+//        return true;
+//    }
 }

@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name"></string>
-    <string name="intro1">Log In</string>
+    <string name="app_name">ThePerfectPartner</string>
+    <string name="intro1">LogIn</string>
     <string name="intro2">Register</string>
     <string name="name_and_password">Name and Password</string>
-    <string name="login_button">Log In</string>
-    <string name="login_google_button">Log In with Google</string>
+    <string name="login_button">Login</string>
+    <string name="login_google_button">Google</string>
     <string name="register_button">Register</string>
-    <string name="register_google_button">Register with Google</string>
+    <string name="register_google_button">Google</string>
     <string name="add_birthday">Whens your birthday?</string>
     <string name="next">Next</string>
     <string name="tell_us_about_you">Tell Us More About You</string>
@@ -23,6 +23,8 @@
     <string name="profile_nav">Profile</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="already_have_an_account">Have an account?</string>
+    <string name="login">Login</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
