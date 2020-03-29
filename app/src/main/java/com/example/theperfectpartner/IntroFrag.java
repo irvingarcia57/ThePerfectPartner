@@ -40,14 +40,14 @@ public class IntroFrag extends Fragment implements View.OnClickListener{
     public void onClick(View view) {
 
 
-        switch (view.getId()) {
-            case R.id.register_button:
-                navController.navigate(R.id.action_introFrag_to_register);
-                break;
-            case R.id.log_in_button:
-                navController.navigate(R.id.action_introFrag_to_signIn);
-                break;
-        }
+//        switch (view.getId()) {
+////            case R.id.register_button:
+////                navController.navigate(R.id.action_introFrag_to_register);
+////                break;
+////            case R.id.log_in_button:
+////                navController.navigate(R.id.action_introFrag_to_signIn);
+////                break;
+////        }
 
 
     }

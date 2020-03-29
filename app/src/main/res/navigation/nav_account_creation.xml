@@ -6,7 +6,7 @@
     app:startDestination="@id/addBirthday2">
     <fragment
         android:id="@+id/addBirthday2"
-        android:name="com.example.theperfectpartner.AddBirthday"
+        android:name="com.example.theperfectpartner.AccountCreationBirthday"
         android:label="add_birthday"
-        tools:layout="@layout/add_birthday" />
+        tools:layout="@layout/account_creation_birthday" />
 </navigation>

@@ -1,6 +1,5 @@
 package com.example.theperfectpartner;
 
-
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,15 +8,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.theperfectpartner.R;
 
-public class AddBirthday extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class AccountCreationFood extends Fragment {
+
+    public AccountCreationFood() {
+        // Required empty public constructor
+    }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.add_birthday, container, false);
+        return inflater.inflate(R.layout.account_creation_food, container, false);
     }
-
 }
