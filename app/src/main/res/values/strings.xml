@@ -26,6 +26,17 @@
     <string name="already_have_an_account">Have an account?</string>
     <string name="login">Login</string>
 
+    <string name="AC_title">What Type of Food Do You Like?</string>
+    <string name="AC_mex">Mexican</string>
+    <string name="AC_asian">Asian</string>
+    <string name="AC_italian">Italian</string>
+    <string name="AC_indian">Indian</string>
+    <string name="AC_cajun">Cajun</string>
+    <string name="AC_Mediter">Mediterranean</string>
+    <string name="AC_german">German</string>
+    <string name="AC_burgers">Burgers</string>
+    <string name="AC_tacos">Tacos</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

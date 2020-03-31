@@ -8,5 +8,14 @@
         android:id="@+id/addBirthday2"
         android:name="com.example.theperfectpartner.AccountCreationBirthday"
         android:label="add_birthday"
-        tools:layout="@layout/account_creation_birthday" />
+        tools:layout="@layout/account_creation_birthday" >
+        <action
+            android:id="@+id/action_addBirthday2_to_accountCreationFood"
+            app:destination="@id/accountCreationFood" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountCreationFood"
+        android:name="com.example.theperfectpartner.AccountCreationFood"
+        android:label="account_creation_food"
+        tools:layout="@layout/account_creation_food" />
 </navigation>

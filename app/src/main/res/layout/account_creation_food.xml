@@ -1,13 +1,117 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.theperfectpartner.AccountCreationFood">
+    tools:context=".AccountCreationFood">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:gravity="center">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/AC_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AC_title"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:columnCount="3"
+            android:padding="10dp"
+            android:rowCount="3">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/asian"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/ic_check_box_outline_blank_24dp"
+                android:onClick="onClick"
+                android:text="@string/AC_asian"
+                android:theme="@style/colored_checkBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cajun"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/ic_check_box_outline_blank_24dp"
+                android:onClick="selectItem"
+                android:text="@string/AC_cajun"
+                android:theme="@style/colored_checkBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/german"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/ic_check_box_outline_blank_24dp"
+                android:onClick="selectItem"
+                android:text="@string/AC_german"
+                android:theme="@style/colored_checkBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/indian"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/ic_check_box_outline_blank_24dp"
+                android:onClick="selectItem"
+                android:text="@string/AC_indian"
+                android:theme="@style/colored_checkBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/italian"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/ic_check_box_outline_blank_24dp"
+                android:onClick="selectItem"
+                android:text="@string/AC_italian"
+                android:theme="@style/colored_checkBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/mediter"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/ic_check_box_outline_blank_24dp"
+                android:onClick="selectItem"
+                android:text="@string/AC_Mediter"
+                android:theme="@style/colored_checkBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/mexican"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/ic_check_box_outline_blank_24dp"
+                android:onClick="selectItem"
+                android:text="@string/AC_mex"
+                android:theme="@style/colored_checkBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/burgers"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/ic_check_box_outline_blank_24dp"
+                android:onClick="selectItem"
+                android:text="@string/AC_burgers"
+                android:theme="@style/colored_checkBox" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/tacos"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/ic_check_box_outline_blank_24dp"
+                android:onClick="selectItem"
+                android:text="@string/AC_tacos"
+                android:theme="@style/colored_checkBox" />
+
+
+        </GridLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

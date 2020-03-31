@@ -7,9 +7,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-
-
-
+    </style>
+    <style name="colored_checkBox" parent ="Theme.AppCompat.Light">
+        <!-- selected checkbox color -->
+        <item name="colorAccent">@android:color/holo_purple</item>
+        <!-- default/unselected checkbox color -->
+        <item name="android:textColorSecondary">@android:color/holo_blue_light</item>
     </style>
 
 </resources>
