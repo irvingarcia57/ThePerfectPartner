@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAccountCreationColor">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/AC_color_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AC_color_title"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:columnCount="3"
+            android:padding="10dp"
+            android:rowCount="3">
+
+            <CheckBox
+                android:id="@+id/blue"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:onClick="selectItem"
+                android:text="@string/AC_blue"
+                android:theme="@style/colored_checkBox" />
+
+            <CheckBox
+                android:id="@+id/red"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_red"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/green"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_green"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/yellow"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_yellow"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/orange"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_orange"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/black"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_black"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/purple"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_purple"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/cyan"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_cyan"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/pink"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_pink"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+            <CheckBox
+                android:id="@+id/magenta"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_magenta"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+            <CheckBox
+                android:id="@+id/white"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_white"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+            <CheckBox
+                android:id="@+id/gray"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_gray"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+
+
+        </GridLayout>
+
+
+
+        <Button
+            android:id="@+id/bt1_color"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_button1"
+            android:text="@string/next"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
