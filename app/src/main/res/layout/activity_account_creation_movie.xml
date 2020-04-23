@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAccountCreationMovie">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/AC_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AC_movie_title"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:columnCount="3"
+            android:padding="10dp"
+            android:rowCount="3">
+
+            <CheckBox
+                android:id="@+id/action"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:onClick="selectItem"
+                android:text="@string/AC_action"
+                android:theme="@style/colored_checkBox" />
+
+            <CheckBox
+                android:id="@+id/adventure"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_adventure"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/animation"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_animation"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/comedy"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_comedy"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/documentary"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_documentary"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/drama"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_drama"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/horror"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_horror"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+            <CheckBox
+                android:id="@+id/political"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_political"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/romance"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_romance"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/science_fiction"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_science_fiction"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+            <CheckBox
+                android:id="@+id/thriller"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_thriller"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+            <CheckBox
+                android:id="@+id/western"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_western"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+
+
+
+        </GridLayout>
+
+
+
+        <Button
+            android:id="@+id/bt1_movie"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_button1"
+            android:text="@string/next"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

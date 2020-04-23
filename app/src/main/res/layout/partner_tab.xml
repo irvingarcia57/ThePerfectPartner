@@ -6,41 +6,188 @@
     android:layout_height="match_parent"
     tools:context=".PartnerTab">
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285">
+
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
+            <ImageView
+                android:id="@+id/partner_image"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_person_black_24dp" />
             <TextView
-                android:id="@+id/partner_view"
+                android:id="@+id/partner1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="@string/partner"
-                android:textSize="20sp" />
-
+                android:text="Birthday:"
+                android:textSize="25dp" />
             <TextView
-                android:id="@+id/partner"
-                android:layout_width="370dp"
-                android:layout_height="225dp"
+                android:id="@+id/partner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="September 1, 1998"
+                android:textSize="20dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorAccent"
-                android:text=""
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/partner_view" />
+                android:columnCount="2"
+                android:rowCount="2">
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="left"
+                android:columnCount="1"
+                android:rowCount="2">
+                <TextView
+                    android:id="@+id/partner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Colors:"
+                    android:textSize="25dp" />
+                <TextView
+                    android:id="@+id/partner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blue"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/partner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Red"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/partner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orange"
+                    android:textSize="20dp" />
+
+
+            </GridLayout>
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+
+                android:columnCount="1"
+                android:rowCount="2">
+                <TextView
+                    android:id="@+id/partner3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food: "
+                    android:textSize="25dp" />
+                <TextView
+                    android:id="@+id/partner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chinese"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/partner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burgers"
+                    android:textSize="20dp" />
+                <TextView
+                android:id="@+id/partner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mexican"
+                android:textSize="20dp" />
+
+            </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="left"
+                    android:columnCount="1"
+                    android:rowCount="2">
+                    <TextView
+                        android:id="@+id/partner4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hobbies: "
+                        android:textSize="25dp" />
+                    <TextView
+                        android:id="@+id/partner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Video Games"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/partner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reading"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/partner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bike Riding"
+                        android:textSize="20dp" />
+
+                </GridLayout>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:columnCount="1"
+                    android:rowCount="2">
+                    <TextView
+                        android:id="@+id/partner5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Movies: "
+                        android:textSize="25dp" />
+                    <TextView
+                        android:id="@+id/partner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comedies"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/partner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Horror"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/partner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mystery "
+                        android:textSize="20dp" />
+
+                </GridLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </GridLayout>
 
 
         </LinearLayout>
-    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

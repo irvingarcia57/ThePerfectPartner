@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAccountCreationFood">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/AC_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AC_title"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:columnCount="3"
+            android:padding="10dp"
+            android:rowCount="3">
+
+            <CheckBox
+                android:id="@+id/japanese"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:onClick="selectItem"
+                android:text="@string/AC_japanese"
+                android:theme="@style/colored_checkBox" />
+
+            <CheckBox
+                android:id="@+id/cajun"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_cajun"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/german"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_german"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/indian"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_indian"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/italian"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_italian"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/mediter"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_Mediter"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/mexican"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_mex"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/burgers"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_burgers"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+            <CheckBox
+                android:id="@+id/tacos"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_tacos"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+            <CheckBox
+                android:id="@+id/chinese"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_chinese"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+            <CheckBox
+                android:id="@+id/greek"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_greek"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+            <CheckBox
+                android:id="@+id/thai"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:button="@drawable/image_checkbox"
+                android:text="@string/AC_thai"
+                android:theme="@style/colored_checkBox"
+                android:onClick="selectItem"/>
+
+
+
+        </GridLayout>
+
+
+
+        <Button
+            android:id="@+id/bt1_food"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_button1"
+            android:text="@string/next"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

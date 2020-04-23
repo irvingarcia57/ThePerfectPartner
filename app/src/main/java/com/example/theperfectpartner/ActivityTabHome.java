@@ -1,21 +1,14 @@
 package com.example.theperfectpartner;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
-import android.view.View;
 
-
-public class ActivityAccountCreation extends AppCompatActivity {
-
+public class ActivityTabHome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.account_creation_food);
-
+        setContentView(R.layout.activity_tab_home);
     }
-
-
 }

@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -56,7 +54,7 @@ public class ActivityRegister extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                startActivity(new Intent(ActivityRegister.this, ActivityAccountCreation.class));
+                                startActivity(new Intent(ActivityRegister.this, ActivityAccountCreationBirthday.class));
                                 finish();
                             }else {
                                 //Something went wrong

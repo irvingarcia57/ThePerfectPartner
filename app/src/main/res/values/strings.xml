@@ -7,7 +7,7 @@
     <string name="login_google_button">Google</string>
     <string name="register_button">Register</string>
     <string name="register_google_button">Google</string>
-    <string name="add_birthday">Whens your birthday?</string>
+    <string name="add_birthday">When is your birthday?</string>
     <string name="next">Next</string>
     <string name="tell_us_about_you">Tell Us More About You</string>
     <string name="home_icon">Home</string>
@@ -28,7 +28,6 @@
 
     <string name="AC_title">What Type of Food Do You Like?</string>
     <string name="AC_mex">Mexican</string>
-    <string name="AC_asian">Asian</string>
     <string name="AC_italian">Italian</string>
     <string name="AC_indian">Indian</string>
     <string name="AC_cajun">Cajun</string>
@@ -36,6 +35,53 @@
     <string name="AC_german">German</string>
     <string name="AC_burgers">Burgers</string>
     <string name="AC_tacos">Tacos</string>
+    <string name="AC_japanese">Japanese</string>
+    <string name="AC_chinese">Chinese</string>
+    <string name="AC_greek">Greek</string>
+    <string name="AC_thai">Thai</string>
+
+    <string name="AC_movie_title">What Type of Movies Do You Like?</string>
+    <string name="AC_comedy">Comedy</string>
+    <string name="AC_action">Action</string>
+    <string name="AC_horror">Horror</string>
+    <string name="AC_science_fiction">Science Fiction</string>
+    <string name="AC_adventure">Adventure</string>
+    <string name="AC_romance">Romance</string>
+    <string name="AC_animation">Animation</string>
+    <string name="AC_documentary">Documentary </string>
+    <string name="AC_thriller">Thriller</string>
+    <string name="AC_drama">Drama</string>
+    <string name="AC_western">Western</string>
+    <string name="AC_political">Political</string>
+
+    <string name="AC_hobbies_title">What Type of Hobbies Do You Like?</string>
+    <string name="AC_reading">Reading</string>
+    <string name="AC_traveling">Traveling</string>
+    <string name="AC_fishing">Fishing</string>
+    <string name="AC_crafts">Crafts</string>
+    <string name="AC_television">Television</string>
+    <string name="AC_bird_watching">Bird Watching</string>
+    <string name="AC_collecting">Collecting</string>
+    <string name="AC_music">Music</string>
+    <string name="AC_gardening">Gardening</string>
+    <string name="AC_video_games">Video Games</string>
+    <string name="AC_cooking">Cooking</string>
+    <string name="AC_camping">Camping</string>
+
+    <string name="AC_color_title">Do You Have A Favorite Color?</string>
+    <string name="AC_blue">Blue</string>
+    <string name="AC_red">Red</string>
+    <string name="AC_green">Green</string>
+    <string name="AC_yellow">Yellow</string>
+    <string name="AC_orange">Orange</string>
+    <string name="AC_black">Black</string>
+    <string name="AC_purple">Purple</string>
+    <string name="AC_cyan">Cyan</string>
+    <string name="AC_pink">Pink</string>
+    <string name="AC_magenta">Magenta</string>
+    <string name="AC_white">White</string>
+    <string name="AC_gray">Gray</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
