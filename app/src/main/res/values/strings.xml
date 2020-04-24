@@ -83,7 +83,26 @@
     <string name="AC_gray">Gray</string>
 
 
+    <string-array name="Event_List">
+        <item>Select an Event to save a date</item>
+        <item>Event 1</item>
+        <item>Event 2</item>
+        <item>Event 3</item>
+        <item>Event 4</item>
+        <item>Event 5</item>
+        <item>Event 6</item>
+        <item>Event 7</item>
+        <item>Event 8</item>
+        <item>Event 9</item>
+        <item>Event 10</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="delete_event" />
+    <string name="event_name" />
+    <string name="add_event" />
+    <string name="button" />
+    <string name="add_events">Add Events</string>
 
 </resources>

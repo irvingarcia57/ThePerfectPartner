@@ -17,11 +17,23 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class ActivityRegister extends AppCompatActivity {
 
     private EditText register_email, register_name, register_password;
     private FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
+    private FirebaseDatabase firebaseDatabase;
+    private FirebaseAuth mAuth;
+    private DatabaseReference ref;
+    public String user_id;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +42,12 @@ public class ActivityRegister extends AppCompatActivity {
 
 
         mFirebaseAuth = FirebaseAuth.getInstance();
-
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        ref = firebaseDatabase.getReference();
         register_email = findViewById(R.id.register_email);
         register_name = findViewById(R.id.register_name);
         register_password = findViewById(R.id.register_password);
-        Button register_button = findViewById(R.id.register_button);
+        final Button register_button = findViewById(R.id.register_button);
         TextView login_direct = findViewById(R.id.login_direct);
 
 
@@ -43,8 +56,8 @@ public class ActivityRegister extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String email = register_email.getText().toString();
-                String name = register_name.getText().toString();
+                final String email = register_email.getText().toString();
+                final String name = register_name.getText().toString();
                 String password = register_password.getText().toString();
 
                 if(!email.isEmpty() && !password.isEmpty()){
@@ -54,6 +67,19 @@ public class ActivityRegister extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
+                               user_id = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                               ref.addValueEventListener(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                        ref.child("User Info").child(user_id).child("Name").setValue(name);
+                                        ref.child("User Info").child(user_id).child("Email").setValue(email);
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                    }
+                                });
                                 startActivity(new Intent(ActivityRegister.this, ActivityAccountCreationBirthday.class));
                                 finish();
                             }else {
